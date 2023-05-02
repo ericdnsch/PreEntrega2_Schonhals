@@ -1,0 +1,127 @@
+figure {
+
+    @include cards (70%,solid 1px $figureBorder,10px,8px 4px 10px $figureShadow, center,$figureColor);
+    img{
+        width: 75%;
+    }
+}
+
+.gridcontainer{
+
+    display: grid;
+    grid-template-rows: 10vh 120vh 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "searchbar searchbar searchbar searchbar"
+    "filtros contenedorproductos1 contenedorproductos2 contenedorproductos3"
+    "filtros pgsproductos pgsproductos pgsproductos"
+    ;
+}
+.srch-item1{
+        
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0% 0%;
+}
+.srch-item2{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0% 1%;
+}
+.srch-item3{
+    
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0% 0%;
+    margin-right: 18em;    
+}
+.searchbar {
+
+    grid-area: searchbar;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5.5rem;
+    select{
+        visibility: hidden;
+    }
+    h2{
+        color: $secondaryColor;
+        margin: auto;
+    }
+    input{
+        border-radius: 5px;
+        border: none;
+        width: 400px;
+        height: 30px;
+        background-color: #f0f0f0;
+    }
+    
+}
+.filtros{
+
+    grid-area: filtros;
+    padding: 8% 10%;
+    a{
+        color: $linkColor;
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-bottom: 4px;
+        &:hover{
+            color:$hoverColordark;
+        }
+    }
+    li{
+        list-style: none;
+    }
+    span{
+        display: block;
+        color: $blackColor;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+.contenedorproductos1{
+
+    background-color:$prodColor;
+    grid-area: contenedorproductos1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.contenedorproductos2{
+
+    background-color:$prodColor;
+    grid-area: contenedorproductos2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+.contenedorproductos3{
+
+    background-color: $prodColor;
+    grid-area: contenedorproductos3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+.pgsproductos{
+
+    grid-area: pgsproductos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        margin: 1%;
+        color: $linkColor; 
+    }
+}

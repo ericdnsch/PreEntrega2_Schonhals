@@ -1,0 +1,41 @@
+
+footer{ 
+    background-color:$mainColor;
+    padding: 2% 3%; 
+        svg{
+            width: 20px;
+            fill: $baseColor;
+            margin: 12px;
+        }
+        p{
+            color: $baseColor;
+        }
+
+}
+
+.flex-center nav{
+
+    margin: 0px 30px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $baseColor;
+        &:hover{
+            color:$hoverColorlight;
+        }
+    }
+}
+
+.logofooter {
+
+    width: 150px;
+    margin: 10px;
+}
+
+.footertext {
+
+    width: 300px;
+    font-size: $textMd;
+    font-weight: $fontLight;
+    text-align: center;
+}

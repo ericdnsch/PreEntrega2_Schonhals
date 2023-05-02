@@ -1,0 +1,314 @@
+//breakpoint 768
+@media (width < 768px){
+
+    footer{ 
+        background-color:$mainColor;
+        padding: 2% 2%; 
+            svg{
+                width: 18px;
+                fill: $baseColor;
+                margin: 10px;
+            }
+            p{
+                color: $baseColor;
+            }
+    
+    }
+    footer{
+        div{
+            div{
+                nav{
+                    p{
+                        font-size: $textXs;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        div{
+            div{
+                nav{
+                    a{
+                        font-size: $textXs;
+                    }
+                }
+            }
+        }
+    }
+    .flex-center nav{
+
+        margin: 0px 10px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $baseColor;
+            &:hover{
+                color:$hoverColorlight;
+            }
+        }
+    }
+    .logofooter {
+    
+        width: 100px;
+        margin: 10px;
+    }
+    .footertext {
+    
+        width: 200px;
+        font-size:$textSm;
+        font-weight: $fontLight;
+        text-align: center;
+    }
+    figure {
+
+        width: 80%;
+        height: 24%;
+        border: solid 1px $figureBorder;
+        border-radius: 10px;
+        box-shadow: 8px 4px 10px $figureShadow;
+        text-align: center;
+        background-color: $figureColor;
+        img{
+            width: 90%;
+        }
+    }
+    figcaption {
+    
+        font-weight: $fontLight;
+        margin: 10px;
+    }
+    .gridcontainer{
+
+        display: grid;
+        grid-template-rows: 10vh 120vh 10vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "searchbar searchbar searchbar"
+        "filtros contenedorproductos1 contenedorproductos2"
+        "filtros pgsproductos pgsproductos"
+        ;
+    }
+
+    .srch-item1{
+        
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        margin: 0% 0%;
+        
+    }
+    .srch-item2{
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0% 1%;
+    }
+    .srch-item3{
+        
+        width: 100px;
+        display: flex;
+        align-items: center;
+        margin: 0% 0%;
+        margin-right: 12em;
+        
+    }
+    .searchbar {
+
+        grid-area: searchbar;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
+        select{
+            visibility: hidden;
+        }
+        h2{
+            color: $secondaryColor;
+            margin: auto;
+        }
+        input{
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            height: 30px;
+            background-color: #f0f0f0;
+        }
+        
+    }
+    .contenedorproductos1{
+
+        background-color: $prodColor;
+        grid-area: contenedorproductos1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contenedorproductos2{
+    
+        background-color: $prodColor;
+        grid-area: contenedorproductos2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contenedorproductos3{
+
+        display: none;
+    }
+}
+//breakpoint 430
+@media (width < 430px){
+
+    footer{ 
+        background-color:$mainColor;
+        padding: 2% 2%; 
+            svg{
+                width: 18px;
+                fill: $baseColor;
+                margin: 10px;
+            }
+            p{
+                color: $baseColor;
+            }
+    
+    }
+    div .flex-center {
+
+        display: none;
+    }
+    div .flex-column {
+
+        margin: auto;
+    }
+    .flex-center nav{
+
+        a{
+            text-decoration: none;
+            color: $baseColor;
+            &:hover{
+                color:$hoverColorlight;
+            }
+        }
+    }
+    .logofooter {
+    
+        width: 100px;
+        margin: 10px;
+    }
+    .footertext {
+    
+        width: 200px;
+        font-size: $textSm;
+        font-weight:$fontLight;
+        text-align: center;
+    }
+    figure {
+
+        width: 80%;
+        height: 27%;
+        border: solid 1px $figureBorder;
+        border-radius: 10px;
+        box-shadow: 8px 4px 10px $figureShadow;
+        text-align: center;
+        background-color: $figureColor;
+        img{
+            width: 90%;
+        }
+    }
+    figcaption {
+    
+        font-weight: $fontLight;
+        margin: 0px;
+        font-size: $textXs;
+    }
+    .gridcontainer{
+
+        display: grid;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "searchbar searchbar"
+        "contenedorproductos1 contenedorproductos2"
+        "pgsproductos pgsproductos"
+        ;
+    }
+    .srch-item1{
+        
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        margin: 0% 1%;
+    }
+    .srch-item2{
+        
+       
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0% 1%;
+    }
+    .srch-item3{
+        
+        width: 100px;
+        display: flex;
+        align-items: center;
+        margin: 0% 1%;
+    }
+    .searchbar {
+
+        grid-area: searchbar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        select{
+            color:$mainColor;
+            visibility: visible;
+            border: none;
+            background-color: rgb(236, 236, 236);
+            border-radius: 4px;
+            width: 100px;
+        }
+        h2{
+            color: $secondaryColor;
+            margin: auto;
+        }
+        input{
+            border-radius: 5px;
+            border: none;
+            width: 100px;
+            height: 25px;
+            background-color: #f0f0f0;
+        }
+        
+    }
+    .contenedorproductos1{
+
+        background-color: $prodColor;
+        grid-area: contenedorproductos1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contenedorproductos2{
+    
+        background-color: $prodColor;
+        grid-area: contenedorproductos2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contenedorproductos3{
+
+        display: none;
+    }
+    .filtros{
+
+        display: none;
+    }
+}

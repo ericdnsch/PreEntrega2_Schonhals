@@ -1,0 +1,54 @@
+//colores
+$mainColor:#434b56;
+$secondaryColor:#d4d4dc;
+$baseColor: white;
+$hoverColorlight:rgb(141, 144, 148);
+$hoverColordark:rgb(67, 75, 86);
+$figureBorder:#c8c9ca;
+$figureShadow:#e0e0e0;
+$figureColor:#ffffff;
+$blackColor:rgb(0, 0, 0);
+$prodColor:rgb(250, 250, 250);
+$linkColor:rgb(146, 146, 146); 
+
+
+//fonts
+
+$mainFont:'Roboto', sans-serif;
+
+$textXs:0.75em;
+$textSm:0.875em;
+$textMd:1em;
+$textLg:1.2em;
+$textXl:1.3em;
+
+$fontLight:300;
+$fontRegular:400;
+$fontBold:500;
+
+//extends
+
+.diplayflex {
+    display: flex;
+    align-items: center;
+}
+.flex-center {
+
+    @extend .diplayflex;
+    justify-content: center;
+}
+.flex-space-between{
+    @extend .diplayflex;
+    justify-content: space-between;
+}
+.flex-space-evenly {
+
+    @extend .diplayflex;
+    justify-content: space-evenly;
+}
+.flex-column {
+    
+    @extend .diplayflex;
+    flex-direction: column;
+}
+

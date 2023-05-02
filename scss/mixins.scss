@@ -1,0 +1,16 @@
+@mixin cards ($width,$bordes,$radio,$sombra,$align,$color){
+    width: $width;
+    border: $bordes;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    text-align: $align;
+    background-color: $color;
+}
+
+@mixin indexcards ($width,$bordes,$radio,$sombra){
+    width: $width;
+    border: $bordes;
+    border-radius: $radio;
+    box-shadow: $sombra;
+}
+

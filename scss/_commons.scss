@@ -1,0 +1,71 @@
+.navtext {
+
+    color: $mainColor;
+    font-weight: $fontRegular;
+    font-size: $textLg;
+
+}
+.w-500px {
+
+    width: 500px;
+}
+
+.w-100 {
+
+    width: 100%;
+}
+
+.position-relative {
+
+    position: relative;
+}
+
+.position-absolute {
+
+    position: absolute;
+    
+}
+
+.textalingcenter {
+
+    text-align: center;
+}
+
+.textdecoration-none{
+
+    text-decoration: none;
+}
+
+.display-none {
+
+    display: none;
+}
+
+
+.flex-warp {
+
+    flex-wrap: wrap;
+}
+
+
+h1,h2,h3 {
+
+    font-weight: $fontBold;
+    
+}
+
+figcaption {
+
+        font-weight: $fontLight;
+        margin: 20px;
+}
+
+//seccion de about us
+.bg-color-logo {
+
+    background-color:$mainColor;
+    h2{
+        text-align: center;
+        color:$baseColor;
+    }
+}

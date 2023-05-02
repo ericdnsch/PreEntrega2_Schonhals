@@ -1,0 +1,39 @@
+main{
+    div{
+        img.logomain{
+        
+            width: 100px;
+        }
+
+    }
+
+}
+main{
+    div{ 
+        div{ 
+            figure{
+            @include indexcards (20%,solid 1px $figureBorder,10px,8px 4px 10px $figureShadow);
+            img{
+                width: 80%;
+            }
+            }
+        }
+    }
+}
+.infoIndex {
+
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.caja1{
+
+    text-align: left;
+    margin-top: 20%;
+}
+.caja2{
+
+     text-align: left;
+}
+
